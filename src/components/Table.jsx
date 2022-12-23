@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 import { nameList } from './Constants';
 
 const Table = ({data, useTableHeader, handleTableOperation}) => {
     
-
+    const [loader, setLoader] = useState(true);
     const dragItem = useRef();
     const dragOverItem = useRef();
 
@@ -67,9 +67,6 @@ const Table = ({data, useTableHeader, handleTableOperation}) => {
     });
 
     const modifyData = () =>{
-        if(data === null){
-            return null;
-        }
         data.map((element) => {
             element.fill_rate = ((element.requests / element.responses)*100);
             element.ctr = ((element.clicks / element.impressions)*100);

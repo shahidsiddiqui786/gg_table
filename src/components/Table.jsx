@@ -1,10 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import { nameList } from './Constants';
 
 const Table = ({data, useTableHeader, handleTableOperation}) => {
     
-    const [loader, setLoader] = useState(true);
     const dragItem = useRef();
     const dragOverItem = useRef();
 

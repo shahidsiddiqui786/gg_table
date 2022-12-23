@@ -5,8 +5,8 @@ export const tableHeaderList = [{"id":"date","p":true}
 ,{"id":"impressions","p":true}
 ,{"id":"clicks","p":true}
 ,{"id":"revenue","p":true}
-,{"id":"fill_rate","p":true}
-,{"id":"ctr","p":true}];
+,{"id":"fill_rate","p":false}
+,{"id":"ctr","p":false}];
 
 
 export const nameList = new Map();

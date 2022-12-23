@@ -12,7 +12,7 @@ const Setting = ({toggleSetting, useTableHeader, handleTableOperation}) => {
     if(element.id === 'app_id' || element.id === 'date')
       return;
 
-    if(element.p) event.target.style.borderLeft = 'none';
+    if(element.p) event.target.style.borderLeft = '1px solid #ddd8d8';
     else event.target.style.borderLeft = '0.3rem solid #136fed';
 
     const index = useTableHeader.findIndex((ele) => ele.id === element.id);
@@ -31,8 +31,10 @@ const Setting = ({toggleSetting, useTableHeader, handleTableOperation}) => {
               variant={'outlined'}
               onClick={(event) => toggleCheck(event,element)}
               style={{
-               borderLeft:(element.p ? '0.3rem solid #136fed' : 'none'),
+               border:'1px solid #ddd8d8',
+               borderLeft:(element.p ? '0.3rem solid #136fed' : '1px solid #ddd8d8'),
                marginRight:'1rem',
+               color:'grey'
               }}
             >
              {nameList.get(element.id)}

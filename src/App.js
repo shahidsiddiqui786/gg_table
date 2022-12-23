@@ -13,7 +13,7 @@ import Table from './components/Table';
 //Constants, Service
 import { tableHeaderList } from './components/Constants';
 import { encrypt, decrypt } from './components/Service';
-import { Card, Container, Typography } from '@mui/material';
+import { Card, Container } from '@mui/material';
 import { useState } from 'react';
 
 

@@ -1,7 +1,7 @@
 import {GET_DATA} from "./types";
 
 export const getData = (start,end) => async dispatch => {
-    const API_END = `http://go-dev.greedygame.com/v3/dummy/report?startDate=${start}&endDate=${end}`;
+    const API_END = `https://go-dev.greedygame.com/v3/dummy/report?startDate=${start}&endDate=${end}`;
     let det
     try{
         await fetch(API_END)
